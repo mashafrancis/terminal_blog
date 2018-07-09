@@ -20,9 +20,8 @@ class Database:
             """
             CREATE TABLE users_blog (
                 user_id SERIAL PRIMARY KEY,
-                first_name VARCHAR(80) NOT NULL,
-                last_name VARCHAR (80) NOT NULL,
                 username VARCHAR (80) NOT NULL,
+                email VARCHAR (80) NOT NULL,
                 password VARCHAR (80) NOT NULL
                 )
             """
