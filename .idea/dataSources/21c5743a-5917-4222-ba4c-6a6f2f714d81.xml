@@ -94,8 +94,8 @@
     <schema id="20" parent="2" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
-      <IntrospectionTimestamp>2018-07-09.10:32:34.461</IntrospectionTimestamp>
-      <IntrospectionStateNumber>795</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-07-09.19:21:15.461</IntrospectionTimestamp>
+      <IntrospectionStateNumber>803</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -142,8 +142,8 @@
       <Type>index</Type>
     </access-method>
     <sequence id="27" parent="20" name="users_blog_user_id_seq">
-      <ObjectId>16862</ObjectId>
-      <StateNumber>795</StateNumber>
+      <ObjectId>16894</ObjectId>
+      <StateNumber>803</StateNumber>
       <SequenceIdentity>1..2147483647</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
@@ -194,8 +194,8 @@
       <StateNumber>787</StateNumber>
     </table>
     <table id="36" parent="20" name="users_blog">
-      <ObjectId>16864</ObjectId>
-      <StateNumber>795</StateNumber>
+      <ObjectId>16896</ObjectId>
+      <StateNumber>803</StateNumber>
     </table>
     <column id="37" parent="31" name="name">
       <Position>1</Position>
@@ -411,46 +411,39 @@
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>795</StateNumber>
+      <StateNumber>803</StateNumber>
       <DefaultExpression>nextval(&apos;users_blog_user_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
       <SequenceName>users_blog_user_id_seq</SequenceName>
     </column>
-    <column id="71" parent="36" name="first_name">
+    <column id="71" parent="36" name="username">
       <Position>2</Position>
       <DataType>varchar(80)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>795</StateNumber>
+      <StateNumber>803</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="72" parent="36" name="last_name">
+    <column id="72" parent="36" name="email">
       <Position>3</Position>
       <DataType>varchar(80)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>795</StateNumber>
+      <StateNumber>803</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="73" parent="36" name="username">
+    <column id="73" parent="36" name="password">
       <Position>4</Position>
       <DataType>varchar(80)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>795</StateNumber>
+      <StateNumber>803</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="74" parent="36" name="password">
-      <Position>5</Position>
-      <DataType>varchar(80)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>795</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <index id="75" parent="36" name="users_blog_pkey">
-      <ObjectId>16868</ObjectId>
+    <index id="74" parent="36" name="users_blog_pkey">
+      <ObjectId>16900</ObjectId>
       <ColNames>user_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="76" parent="36" name="users_blog_pkey">
-      <ObjectId>16869</ObjectId>
+    <key id="75" parent="36" name="users_blog_pkey">
+      <ObjectId>16901</ObjectId>
       <ColNames>user_id</ColNames>
       <UnderlyingIndexName>users_blog_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
